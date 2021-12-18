@@ -52,7 +52,7 @@ const allTextFiles = () => {
 }
 
 app.get("/text-files", (request, response) => {
-    response.send(allTextFiles())
+    response.send(allTextFiles()) // return all the txt files in the folder
 })
 
 app.listen(PORT, () => console.log("App started in ", PORT))
